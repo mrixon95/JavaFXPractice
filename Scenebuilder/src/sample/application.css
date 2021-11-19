@@ -1,0 +1,16 @@
+.root{
+    -fx-background-color:"black";
+}
+.label{
+    -fx-font-size:50;
+}
+.button{
+    -fx-font-size:50;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: "brown";
+}
+
+#favouriteLabel {
+    -fx-font-size:20;
+    -fx-text-fill: "blue";
+}

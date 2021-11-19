@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="pane" prefHeight="539.0" prefWidth="712.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="songLabel" alignment="CENTER" layoutX="13.0" layoutY="44.0" prefHeight="91.0" prefWidth="687.0" text="MP3 Player" textFill="#3dff47">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="songProgressBar" layoutX="13.0" layoutY="182.0" prefHeight="14.0" prefWidth="687.0" progress="0.0" />
+            <Button fx:id="playButton" layoutX="13.0" layoutY="206.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="53.0" prefWidth="89.0" text="PLAY">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="pauseButton" layoutX="102.0" layoutY="206.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="53.0" prefWidth="89.0" text="PAUSE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetButton" layoutX="190.0" layoutY="206.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="53.0" prefWidth="89.0" text="RESET">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="previousButton" layoutX="279.0" layoutY="206.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="53.0" prefWidth="89.0" text="PREVIOUS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextButton" layoutX="368.0" layoutY="206.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="53.0" prefWidth="89.0" text="NEXT">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="speedBox" layoutX="457.0" layoutY="206.0" prefHeight="53.0" prefWidth="89.0" promptText="SPEED" />
+            <Slider fx:id="volumeSlider" layoutX="558.0" layoutY="226.0" max="100.0" value="50.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

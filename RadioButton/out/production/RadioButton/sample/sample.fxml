@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="351.0" prefWidth="479.0">
+         <children>
+            <RadioButton fx:id="pizzaButton" onAction="#changeFood" layoutX="72.0" layoutY="148.0" mnemonicParsing="false" text="pizza">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sushiButton" onAction="#changeFood" layoutX="207.0" layoutY="148.0" mnemonicParsing="false" text="sushi">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="ramenButton" onAction="#changeFood" layoutX="348.0" layoutY="148.0" mnemonicParsing="false" text="ramen">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="myLabel" layoutX="212.0" layoutY="73.0" text="Label">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
